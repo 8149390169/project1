@@ -35,7 +35,12 @@ pipeline {
             }
           }
         }
-	    
+
+       stage('Depoyment on Kubernetes cluster') {
+          steps{
+            sh "kubectl create deployment todo-app --image=${registry}:${BUILD_NUMBER}"
+          }
+        }	    
        
         stage('Remove Unused docker image') {
           steps{
