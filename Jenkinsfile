@@ -4,7 +4,7 @@ pipeline {
 	
 */
    environment {
-        registry = "swapnilsrd/vprofilecicd"
+        registry = "shubhambh/project1"
         registryCredential = 'dockerhubcreds'
     }
 
