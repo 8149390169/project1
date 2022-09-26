@@ -46,5 +46,10 @@ pipeline {
             sh "kubectl create deployment todo-app --image ${registry}"
             }
         }
+       stage('Service Deploy') {
+	  steps {
+            sh "kubectl create deployment todo-app --image ${registry}"
+            }
+        }
     }
 }
