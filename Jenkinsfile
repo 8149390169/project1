@@ -46,9 +46,9 @@ pipeline {
             sh "kubectl create deployment todo-app --image ${registry}"
             }
         }
-       stage('Service Deploy') {
+       stage('Expose application on NodePort') {
 	  steps {
-            sh "kubectl create deployment todo-app --image ${registry}"
+            sh "kubctl create -f todo-app-service.yaml"
             }
         }
     }
