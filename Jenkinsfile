@@ -48,7 +48,7 @@ pipeline {
         }
        stage('Expose application on NodePort') {
 	  steps {
-            sh "kubctl create -f todo-app-service.yaml"
+            sh "kubectl create -f todo-app-service.yaml"
             }
         }
     }
