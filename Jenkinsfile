@@ -43,12 +43,12 @@ pipeline {
         }
        stage('Kubernetes Deploy') {
 	  steps {
-//            sh "kubectl create deployment todo-app --image ${registry}"
+            sh "kubectl create deployment todo-app --image ${registry}"
             }
         }
        stage('Expose application on NodePort') {
 	  steps {
-//            sh "kubectl create -f todo-app-service.yaml"
+            sh "kubectl create -f todo-app-service.yaml"
             }
         }
     }
