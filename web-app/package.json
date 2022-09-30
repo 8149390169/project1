@@ -1,0 +1,17 @@
+{
+  "name": "sample-apps",
+  "version": "1.0.0",
+  "description": "This is the sample nodejs apps",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "http": "^0.0.1-security",
+    "sample-apps": "^1.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Shubham Bhadke",
+  "license": "ISC"
+}
