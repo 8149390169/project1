@@ -1,7 +1,7 @@
 version: "3.7"
 services:
    app:
-     image: 9668092d34e5
+     image: shubhambh/project1
      ports:
        - 8081:8081
      working_dir: /app
