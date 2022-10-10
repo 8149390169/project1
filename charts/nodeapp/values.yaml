@@ -46,6 +46,6 @@ ports:
 
 
 service:
-  enabled: false
+  enabled: true
   type: NodePort
   port: 31000
