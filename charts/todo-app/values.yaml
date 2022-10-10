@@ -46,6 +46,6 @@ ports:
 
 
 service:
-  enabled: true
+  enabled: flase
   type: NodePort
   port: 32008
