@@ -13,7 +13,7 @@ pipeline {
         stage('Building images') {
             steps{
               script {
-                dockerImage = docker.build registry + ":$BUILD_NUMBER"
+                dockerImage = docker.build todoapp + ":$BUILD_NUMBER"
               }
             }
         }
