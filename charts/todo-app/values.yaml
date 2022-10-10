@@ -7,7 +7,7 @@ replicaCount: 1
 
 image:
   repository: shubhambh/todo-app
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "v1.0.0"
 
