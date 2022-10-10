@@ -4,7 +4,7 @@ pipeline {
 	
 */
    environment {
-        registry = "shubhambh/project1"
+        registry = "todo-app"
         registryCredential = 'dockerhubcreds'
     }
 
@@ -13,7 +13,7 @@ pipeline {
         stage('Building images') {
             steps{
               script {
-                dockerImage = docker.build todoapp + ":$BUILD_NUMBER"
+                dockerImage = docker.build registry + ":$BUILD_NUMBER"
               }
             }
         }
