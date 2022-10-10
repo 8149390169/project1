@@ -9,7 +9,7 @@ image:
   repository: shubhambh/project1
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.0.0"
+  tag: "latest"
 
 deploymentName: nodeapp
 
