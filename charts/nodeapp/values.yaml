@@ -7,7 +7,7 @@ replicaCount: 2
 
 image:
   repository: shubhambh/project1
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
 
