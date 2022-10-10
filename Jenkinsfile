@@ -4,7 +4,7 @@ pipeline {
 	
 */
    environment {
-        registry = "todo-app"
+        registry = "shubhambh/todo-app"
         registryCredential = 'dockerhubcreds'
     }
 
