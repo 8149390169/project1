@@ -48,4 +48,4 @@ ports:
 service:
   enabled: true
   type: NodePort
-  port: 31000
+  port: 31001
